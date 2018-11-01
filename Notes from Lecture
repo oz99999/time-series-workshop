@@ -40,18 +40,28 @@ CA #1: Order doesn't matter (it does)
 CA #2: TRaining and future data are similar 
 CA #3: Models can be evaluated with a single row of data
 
+>>>>>>>>The four sections of Time Series Forecasting Process:
+                        Feature Engineering - What are different featurs I can use? 
+                                                How do you seaerch for some of these features
+                        Target Transformation - Different season strategies
+                        Model Backtesting - Refit on most recent data 
+                                        Q: WHat if limited data around events? 
+                                                       A: Focus validation on period of interest; ex: holidays - so validate just during the holidays 
+                                                       A: You can build in indexes 
+                        Modeling - 
 
-Feature Engineering - What are different featurs I can use? 
-                        How do you seaerch for some of these features
-Target Transformation - Different season strategies
-Model Backtesting - Refit on most recent data 
-                Q: WHat if limited data around events? 
-                               A: Focus validation on period of interest; ex: holidays - so validate just during the holidays 
-                               A: You can build in indexes 
-Modeling - 
-
-General Time Series Framewrok (see photos)
+>>>>>>>General Time Series Framewrok (see photos)
         -Alot of times have really tight busienss constraints, need to forecast for next week but don't know this week's sales
         - Might not care about 1 day prediction when you care about 7-14 days
         
+>>>>>>Time Series Modeling Families:
 
+                        INtegrated Models-Predictions feeding more predictions
+                                     -Per time basis modeling 
+
+                        Trends and Decomposition Models - 
+                                -tbats, arima fore-8 trends
+
+
+             
+             
