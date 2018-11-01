@@ -28,4 +28,14 @@ Time-Series - can mean different things to different people
     
 Other times too, people are talking about independent event data     
 
+Question: Do we still bother with models like ARIMA, etc? 
 
+Question: How do you incorooprate known information?
+Could possibly treat as target transformation
+In general for ML, it can be difficult to incorporate known diverse sets of information 
+
+
+Why are time series problems different? 
+CA #1: Order doesn't matter (it does)
+CA #2: TRaining and future data are similar 
+CA #3: Models can be evaluated with a single row of data
