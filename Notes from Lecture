@@ -1,1 +1,31 @@
 
+Time Series Workshop − Walkthrough
+ODSC West − November 2, 2017
+Michael Schmidt
+https://github.com/mds47/time-series-workshop
+
+
+Time Series Forecasting
+        -Predict future based off of historical trends
+        
+        
+https://www.m4.unic.ac.cy/
+
+ONe thing he doesn't typically talk about is model maintenance, etc
+
+Traditional forecasting methodologies focuson univariate cases, don;t learn from multiple examples at once 
+Most ML afre fantastic at dealing with multiple features (boosted, tree absed,e tc)
+
+HOw could you handle different seasonalities?
+See slide: Target Differences
+  Intentionally bake in seasonality - focus only what's difference year aftter year 
+  Specifically around holiday, people will put alot of effort into feature engineering, especially around known events
+          Can create freatures and feed into model (Black Friday, Thanksgiving, etc)
+
+Time-Series - can mean different things to different people
+    Ex: EKG (using it for pattern recognition, even though it is a time based)
+    
+    
+Other times too, people are talking about independent event data     
+
+
