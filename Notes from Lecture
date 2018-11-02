@@ -64,4 +64,84 @@ CA #3: Models can be evaluated with a single row of data
 
 
              
-             
+>>>>One of the easiest ways to feature engineer is a lag
+Slide: Simple Lags (Table)
+                When creating a new feature, basically appending columns
+
+
+
+Candidate Time Series Features
+
+
+Target Trabsformations
+                Log Transformations - 
+                Differencing - 
+                                Trying to bake in basic seasonal pattern 
+                                Really works wells for applying more complicated methods 
+                                
+                                
+Out of time validation
+        Back Test
+                -train on some period and measure the error 
+                (Total Validation Score) = (Validation Score #1) + (Validation Score #2) + (Validations Scores #3)
+                
+                
+How Much Data
+        Time Series Learning Curve
+                For traditional modeling, more data is redundant 
+                But actually for Time Series, more data is irrelevant and potentially bad
+                
+         
+Check out M4 Competition Winner write-up
+
+
+
+>>>> Python Notebook Walkthrough
+
+Fitting a Model  -- Meant to be a pretty straight forward application of sklearn
+
+			fit_model  <= You pass in parameters and it will allow you to play around with the features and how they perform
+					You take input features, shift and then   
+					
+					New X matrix - add columns that will help us predict a line
+					# create features in new dataframe
+X = pd.DataFrame()
+X['lag 0'] = y.shift(0)
+X['lag 1'] = y.shift(1)
+X['lag 2'] = y.shift(2)
+X['lag 3'] = y.shift(3)
+X['lag 4'] = y.shift(4)
+X['lag 5'] = y.shift(5)
+X['lag 6'] = y.shift(6)
+X['lag 7'] = y.shift(7)
+X['lag 8'] = y.shift(8)
+X['lag 9'] = y.shift(9)
+X['lag 10'] = y.shift(10)
+X['lag 11'] = y.shift(11)
+X['lag 12'] = y.shift(12)
+
+
+If you run that cell, helper model will fit and plot the data for you
+	lag 0 - obvoulsy
+	lag 12 - strong year over yeear 
+	
+	What happens if you generate a number of lags? 
+			What haoppens if you sweep out 
+			
+	Impact of Number of lags spikes up at 12
+	
+	
+More types of Features
+	Bring in 12 lags because important but can also bring in more features
+	
+	Pandas makes it easy to create a rich feature set
+	
+	
+	By adding richer features got a significant improvement
+	Text Analytics - Can do a rolling sentiment score
+	
+	
+Forecast Distance - How far out can tyou forecast>?
+
+
+Log Transform / Differencing
